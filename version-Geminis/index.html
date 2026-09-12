@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludoteca - Reseñas de Juegos de Mesa</title>
+    <link rel="stylesheet" href="estilosIA.css">
+</head>
+<body>
+
+<!-- Navegación principal manejada 100% con CSS (Radio + :checked) -->
+<input type="radio" id="nav-catalogo" name="main-nav" checked class="hidden-radio">
+<input type="radio" id="nav-acerca" name="main-nav" class="hidden-radio">
+<input type="radio" id="nav-contacto" name="main-nav" class="hidden-radio">
+
+<header>
+    <div class="logo">🎲 Mi Ludoteca</div>
+    <nav>
+        <label for="nav-catalogo">Catálogo</label>
+        <label for="nav-acerca">Acerca de</label>
+        <label for="nav-contacto">Contacto</label>
+    </nav>
+</header>
+
+<main>
+    <!-- SECCIÓN: CATÁLOGO -->
+    <section class="page-section" id="section-catalogo">
+        <h1>Catálogo de Juegos</h1>
+        
+        <!-- Pestañas de categorías usando inputs ocultos -->
+        <input type="radio" id="tab-estrategia" name="cat-tabs" checked class="hidden-radio">
+        <input type="radio" id="tab-cartas" name="cat-tabs" class="hidden-radio">
+        <input type="radio" id="tab-familiares" name="cat-tabs" class="hidden-radio">
+
+        <div class="tabs-nav">
+            <label for="tab-estrategia">Estrategia</label>
+            <label for="tab-cartas">Cartas</label>
+            <label for="tab-familiares">Familiares</label>
+        </div>
+
+        <!-- Estrategia -->
+        <div class="tab-content" id="content-estrategia">
+            <article class="card">
+                <img src="imagenes/ajedrez.png" alt="Ajedrez">
+                <h2>Ajedrez</h2>
+                <p>El clásico juego de estrategia pura donde dos mentes se enfrentan en un tablero de 64 casillas.</p>
+                <a href="reglamentos/ajedrez.pdf" download class="btn-pdf">📄 Reglamento (PDF)</a>
+            </article>
+            <article class="card">
+                <img src="imagenes/risk.png" alt="Risk">
+                <h2>Risk</h2>
+                <p>Domina el mundo liderando a tus ejércitos a la victoria en este juego de conquista global.</p>
+                <a href="reglamentos/risk.pdf" download class="btn-pdf">📄 Reglamento (PDF)</a>
+            </article>
+        </div>
+
+        <!-- Cartas -->
+        <div class="tab-content" id="content-cartas">
+            <article class="card">
+                <img src="imagenes/truco.png" alt="Truco">
+                <h2>Truco</h2>
+                <p>Engaño, estrategia y cantos en el juego de cartas más tradicional. ¡Cantá quiero o envido!</p>
+                <a href="reglamentos/truco.pdf" download class="btn-pdf">📄 Reglamento (PDF)</a>
+            </article>
+            <article class="card">
+                <img src="imagenes/uno.png" alt="UNO">
+                <h2>UNO</h2>
+                <p>Deshazte de tus cartas combinando colores y números mientras perjudicás a tus oponentes.</p>
+                <a href="reglamentos/uno.pdf" download class="btn-pdf">📄 Reglamento (PDF)</a>
+            </article>
+        </div>
+
+        <!-- Familiares -->
+        <div class="tab-content" id="content-familiares">
+            <article class="card">
+                <img src="imagenes/oca.png" alt="Oca">
+                <h2>Oca</h2>
+                <p>Un divertido recorrido en espiral lleno de sorpresas y trampas para toda la familia.</p>
+                <a href="reglamentos/oca.pdf" download class="btn-pdf">📄 Reglamento (PDF)</a>
+            </article>
+            <article class="card">
+                <img src="imagenes/ludo.png" alt="Ludo">
+                <h2>Ludo</h2>
+                <p>Compite con tus amigos para llevar tus 4 peones a la meta antes que los demás.</p>
+                <a href="reglamentos/ludo.pdf" download class="btn-pdf">📄 Reglamento (PDF)</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: ACERCA DE -->
+    <section class="page-section" id="section-acerca">
+        <h1>Acerca de Nosotros</h1>
+        <div class="content-box">
+            <p>¡Hola! Somos unos apasionados de los juegos de mesa. Esta ludoteca nace con la idea de compartir reglas, reseñas y fomentar la diversión con amigos.</p>
+            <p>Nuestro objetivo es que cualquier persona pueda aprender rápidamente a jugar a los clásicos y no tan clásicos, accediendo a reglamentos claros y directos.</p>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: CONTACTO -->
+    <section class="page-section" id="section-contacto">
+        <h1>Contacto</h1>
+        <form action="#" class="contact-form">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" required placeholder="Tu nombre">
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" required placeholder="tu@email.com">
+            
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" rows="5" required placeholder="¿Qué nos querés decir?"></textarea>
+            
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Mi Ludoteca. Desarrollado con ❤️ solo usando HTML y CSS.</p>
+</footer>
+
+</body>
+</html>
