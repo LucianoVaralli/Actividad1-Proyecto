@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ludoteca | Reseñas de juegos</title>
+  <link rel="stylesheet" href="estilosIA.css">
+</head>
+<body>
+<header class="encabezado">
+  <nav class="nav">
+    <a class="logo" href="index.html">Ludoteca</a>
+    <div class="nav-links">
+      <a href="#catalogo">Catálogo</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#acerca">Acerca de</a>
+    </div>
+  </nav>
+  <section class="hero">
+    <p class="eyebrow">Colección de juegos de mesa</p>
+    <h1>Elegí una partida.<br><span>Descubrí un juego.</span></h1>
+    <p>Reseñas breves y reglamentos básicos para explorar nuestra ludoteca.</p>
+    <a class="boton" href="#catalogo">Ver catálogo</a>
+  </section>
+</header>
+
+<main>
+<section id="catalogo" class="catalogo">
+  <div class="seccion-titulo">
+    <p class="eyebrow">Catálogo</p>
+    <h2>Juegos por categoría</h2>
+  </div>
+
+  <div class="tabs">
+    <a href="#estrategia" class="tab">Estrategia</a>
+    <a href="#cartas" class="tab">Cartas</a>
+    <a href="#familiares" class="tab">Familiares</a>
+  </div>
+
+  <section id="estrategia" class="categoria">
+    <div class="categoria-cabecera"><h3>Estrategia</h3><p>Para pensar, planificar y anticipar.</p></div>
+    <div class="juegos">
+      <article class="juego"><img src="imagenes/ajedrez.png" alt="Portada ilustrada de Ajedrez"><div><p class="tag">Estrategia</p><h4>Ajedrez</h4><p>Un duelo clásico de planificación donde cada movimiento puede cambiar la partida.</p><a class="reglamento" href="reglamentos/ajedrez.pdf">Reglamento →</a></div></article>
+      <article class="juego"><img src="imagenes/risk.png" alt="Portada ilustrada de Risk"><div><p class="tag">Estrategia</p><h4>Risk</h4><p>Conquista territorios, administra tus fuerzas y elegí cuándo atacar.</p><a class="reglamento" href="reglamentos/risk.pdf">Reglamento →</a></div></article>
+    </div>
+  </section>
+
+  <section id="cartas" class="categoria">
+    <div class="categoria-cabecera"><h3>Cartas</h3><p>Partidas ágiles, decisiones y un poco de picardía.</p></div>
+    <div class="juegos">
+      <article class="juego"><img src="imagenes/truco.png" alt="Portada ilustrada de Truco"><div><p class="tag">Cartas</p><h4>Truco</h4><p>Un clásico de cartas donde la estrategia se mezcla con el engaño y los cantos.</p><a class="reglamento" href="reglamentos/truco.pdf">Reglamento →</a></div></article>
+      <article class="juego"><img src="imagenes/uno.png" alt="Portada ilustrada de UNO"><div><p class="tag">Cartas</p><h4>UNO</h4><p>Colores, números y cartas de acción en una carrera por quedarse sin cartas.</p><a class="reglamento" href="reglamentos/uno.pdf">Reglamento →</a></div></article>
+    </div>
+  </section>
+
+  <section id="familiares" class="categoria">
+    <div class="categoria-cabecera"><h3>Familiares</h3><p>Clásicos sencillos para compartir entre todas las edades.</p></div>
+    <div class="juegos">
+      <article class="juego"><img src="imagenes/oca.png" alt="Portada ilustrada de Oca"><div><p class="tag">Familiares</p><h4>Oca</h4><p>Un recorrido clásico basado en dados, casillas especiales y un poco de suerte.</p><a class="reglamento" href="reglamentos/oca.pdf">Reglamento →</a></div></article>
+      <article class="juego"><img src="imagenes/ludo.png" alt="Portada ilustrada de Ludo/Parchís"><div><p class="tag">Familiares</p><h4>Ludo / Parchís</h4><p>Llevá tus fichas hasta la llegada y aprovechá cada tirada del dado.</p><a class="reglamento" href="reglamentos/ludo.pdf">Reglamento →</a></div></article>
+    </div>
+  </section>
+</section>
+
+<section id="acerca" class="info">
+  <div><p class="eyebrow">Acerca de</p><h2>Una ludoteca hecha para compartir.</h2></div>
+  <p>Este sitio es mantenido por un pequeño equipo dedicado a organizar reseñas, reglamentos y recursos de juegos de mesa. La propuesta es ofrecer una referencia simple, clara y accesible para elegir qué jugar.</p>
+</section>
+
+<section id="contacto" class="contacto">
+  <div><p class="eyebrow">Contacto</p><h2>¿Querés dejarnos un mensaje?</h2></div>
+  <form action="#" method="post">
+    <label for="nombre">Nombre</label><input id="nombre" name="nombre" type="text" required>
+    <label for="email">Email</label><input id="email" name="email" type="email" required>
+    <label for="mensaje">Mensaje</label><textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+    <button class="boton" type="submit">Enviar mensaje</button>
+  </form>
+</section>
+</main>
+<footer><p>© 2026 Ludoteca · Sitio estático HTML + CSS</p></footer>
+</body>
+</html>
